@@ -39,8 +39,11 @@ body {
 }
 
 @media (max-width:641px) {
+  body {
+    height: 101vh;
+  }
   .sign-up-form {
-    width: clamp(30rem, 99%, 40rem);
+    width: 99%;
     height: 99%;
     flex-direction: column;
   }
