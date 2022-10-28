@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%
 }
 
 body {
@@ -19,16 +20,17 @@ body {
   justify-content: center; 
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .sign-up-form {
   border: 0.1rem solid #51555b;
   background: #24272c;
-  width: clamp(60rem, 100vw, 80rem);
-  height: clamp(27rem, 100vh, 47rem);
+  width: clamp(15rem, 100vw, 80rem);
+  height: clamp(5rem, 100vh, 47rem);
   display: flex;
   flex-direction: row;
+  border-radius: 1.7rem;
 }
 
 .sign-up-banner {
@@ -37,9 +39,10 @@ body {
   width: clamp(25rem, 45%, 45rem);
 }
 
-.banner-image {
+.banner-svg {
   width: 100%;
   height: 100%;
+  border-radius: 1.7rem 0 0 1.7rem;
 }
 
 @media (max-width:600px) {
@@ -51,8 +54,12 @@ body {
 
   .sign-up-banner {
     width: 100%;
-    height: 25rem;
+    height: clamp(2rem, 40vh, 30rem);
     border-right: none;
     border-bottom: 0.1rem solid #51555b;
+  }
+
+  .banner-svg {
+    border-radius: 1.7rem 1.7rem 0 0;
   }
 }
