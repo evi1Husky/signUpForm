@@ -48,7 +48,7 @@ body {
 .sign-up-fields {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   height: 100%;
   width: 55%; 
@@ -56,7 +56,10 @@ body {
 
 .sign-up-in-text {
   font-family: 'Dejavu Sans', sans-serif;
-  color: #9AA2B2;
+  background: -webkit-linear-gradient(0deg, #f75f5f 0%, #48abe0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 3rem;
 }
 
 @media (max-width:600px) {
