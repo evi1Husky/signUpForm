@@ -21,8 +21,8 @@ ul, li {list-style-type: none;}
 .sign-up-form {
   border: 0.1rem solid #51555b;
   background: #24272c;
-  width: clamp(15rem, 99.5vw, 80rem);
-  height: clamp(5rem, 99.5vh, 47rem);
+  width: clamp(0.1rem, 99.5vw, 80rem);
+  height: clamp(0.1rem, 99.5vh, 47rem);
   display: flex;
   flex-direction: row;
   border-radius: 1.7rem;
@@ -31,7 +31,7 @@ ul, li {list-style-type: none;}
 .sign-up-banner {
   height: 100%;
   border-right: 0.1rem solid #51555b;
-  width: clamp(25rem, 45%, 45rem);
+  width: clamp(0.1rem, 45%, 45rem);
 }
 
 .banner-svg {
@@ -55,7 +55,8 @@ ul, li {list-style-type: none;}
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(1rem, 1rem + 8vmin, 3.7rem);
+  font-size: clamp(0.1rem, 16vmin, 4rem);
+  margin-bottom: 1.5rem;
 }
 
 .sign-up-in-form {
@@ -71,19 +72,39 @@ ul, li {list-style-type: none;}
 .input-label {
   display: flex;
   flex-direction: column;
-  height: 25%;
+  width: clamp(0.1rem, 100%, 16rem);
+  height: clamp(0.1rem, 5% + 20%, 10rem);
   justify-content: space-evenly;
   align-items: center;
 }
 
 .input-label label {
+  align-self: flex-start;
   color: #9AA2B2;
   font-family: 'Dejavu Sans', sans-serif;
+  font-size: clamp(0.1rem, 5vmin, 1.6rem);
+}
+
+.input-label input {
+  width: clamp(0.1rem, 54vw, 16rem);
+  height: clamp(0.1rem, 8vmin, 2.3rem);
 }
 
 .sign-up-fields p {
   color: #9AA2B2;
   font-family: 'Dejavu Sans', sans-serif;
+  font-size: clamp(0.1rem, 5vmin, 1.6rem);
+  margin-top: 1.5rem;
+}
+
+.sign-up-in-form button {
+  color: #9AA2B2;
+  font-family: 'Dejavu Sans', sans-serif;
+  font-size: clamp(0.1rem, 5vmin, 1.6rem);
+  width: clamp(0.1rem, 40vw, 13rem);
+  height: clamp(0.1rem, 7vh, 3rem);
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width:600px) {
@@ -95,7 +116,7 @@ ul, li {list-style-type: none;}
 
   .sign-up-banner {
     width: 100%;
-    height: clamp(2rem, 38vh, 30rem);
+    height: clamp(0.1rem, 38vh, 30rem);
     border-right: none;
     border-bottom: 0.1rem solid #51555b;
   }
