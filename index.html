@@ -14,9 +14,22 @@
     </div>
     <div class="sign-up-fields">
       <h1 class="sign-up-in-text">Sign Up</h1>
-      <form action="/my-handling-form-page" method="post">
-        
+      <form class="sign-up-in-form" action="/" method="post">
+        <div class="input-label">
+          <label for="name">Username</label>
+          <input type="text" id="name" name="user_name" />
+        </div>
+        <div class="input-label">
+          <label for="mail">E-mail</label>
+          <input type="email" id="mail" name="user_email" />
+        </div>
+        <div class="input-label">
+          <label for="mail">Password</label>
+          <input type="email" id="mail" name="user_email" />
+        </div>
+        <button type="submit">Sign up</button>
       </form>
+      <p>Already have an account? Log in.</p>
     </div>
   </div>
   <script src="script.js"></script>

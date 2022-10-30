@@ -1,14 +1,8 @@
 *,
 *::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+*::after {margin: 0; padding: 0; box-sizing: inherit;}
 
-html {
-  font-size: 62.5%;
-}
+html {font-size: 62.5%;}
 
 body {
   box-sizing: border-box;
@@ -21,6 +15,8 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
+ul, li {list-style-type: none;}
 
 .sign-up-form {
   border: 0.1rem solid #51555b;
@@ -47,7 +43,7 @@ body {
 .sign-up-fields {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 55%; 
@@ -60,6 +56,34 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: clamp(1rem, 1rem + 8vmin, 3.7rem);
+}
+
+.sign-up-in-form {
+  margin: 0;
+  height: 60%;
+  width: 55%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input-label label {
+  color: #9AA2B2;
+  font-family: 'Dejavu Sans', sans-serif;
+}
+
+.sign-up-fields p {
+  color: #9AA2B2;
+  font-family: 'Dejavu Sans', sans-serif;
 }
 
 @media (max-width:600px) {
@@ -76,12 +100,7 @@ body {
     border-bottom: 0.1rem solid #51555b;
   }
 
-  .banner-svg {
-    border-radius: 1.7rem 1.7rem 0 0;
-  }
+  .banner-svg {border-radius: 1.7rem 1.7rem 0 0;}
 
-  .sign-up-fields {
-    height: 62%;
-    width: 100%; 
-  }
+  .sign-up-fields {height: 62%; width: 100%;}
 }
