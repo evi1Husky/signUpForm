@@ -55,9 +55,9 @@ ul, li {list-style-type: none;}
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(0.1rem, 10vmin, 4rem);
-  margin-top: clamp(0.1rem, 30vmin, 3rem);
-  margin-bottom: clamp(0.1rem, 30vmin, 0.5rem);
+  font-size: clamp(0.1rem, 9vmin, 4rem);
+  margin-bottom: clamp(0.1rem, 30vh, 1rem);
+  margin-top: clamp(0.1rem, 30vh, 3rem);
 }
 
 .sign-up-in-form {
@@ -73,7 +73,8 @@ ul, li {list-style-type: none;}
 .input-label {
   display: flex;
   flex-direction: column;
-  height: clamp(0.1rem, 4vmin + 20vmin, 10rem);
+  width: clamp(0.1rem, 100%, 16rem);
+  height: clamp(0.1rem, 4% + 20%, 10rem);
   justify-content: space-evenly;
   align-items: center;
 }
@@ -86,7 +87,7 @@ ul, li {list-style-type: none;}
 }
 
 .input-label input {
-  width: clamp(0.1rem, 50vmin, 16rem);
+  width: clamp(0.1rem, 54vw, 16rem);
   height: clamp(0.1rem, 6vmin, 2.3rem);
   border-radius: 2rem;
   border: none;
@@ -96,9 +97,9 @@ ul, li {list-style-type: none;}
 .sign-up-fields p {
   color: #9AA2B2;
   font-family: 'Dejavu Sans', sans-serif;
-  font-size: clamp(0.1rem, 3.5vmin, 1.6rem);
-  margin-top: clamp(0.1rem, 30vmin, 2rem);
-  margin-bottom: clamp(0.1rem, 30vmin, 3rem);
+  font-size: clamp(0.1rem, 4vmin, 1.6rem);
+  margin-top: clamp(0.1rem, 30vh, 1rem);
+  margin-bottom: clamp(0.1rem, 30vh, 1rem);
 }
 
 .sign-up-in-form button {
@@ -106,9 +107,10 @@ ul, li {list-style-type: none;}
   font-family: 'Dejavu Sans', sans-serif;
   font-size: clamp(0.1rem, 5vmin, 1.6rem);
   padding: clamp(0rem, 5vmin, 0.3rem);
-  width: clamp(0.1rem, 40vmin, 13rem);
-  height: clamp(0.1rem, 10vmin, 4rem);
-  margin-top: clamp(0.1rem, 5vmin, 2.5rem);
+  height: clamp(0.1rem, 7vh, 3rem);
+  width: clamp(0.1rem, 40vw, 13rem);
+  margin-top: clamp(0.1rem, 15vmin, 2.5rem);
+  margin-bottom: clamp(0.1rem, 15vmin, 1rem);
   border-radius: 2rem;
   border: none;
   background: #535962;
