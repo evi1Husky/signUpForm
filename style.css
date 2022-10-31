@@ -32,12 +32,27 @@ ul, li {list-style-type: none;}
   height: 100%;
   border-right: 0.1rem solid #51555b;
   width: clamp(0.1rem, 45%, 45rem);
+  position: relative;
 }
 
 .banner-svg {
   width: 100%;
   height: 100%;
   border-radius: 1.7rem 0 0 1.7rem;
+}
+
+#banner-text {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-40%, -30%);
+  font-family: 'Dejavu Sans', sans-serif;
+  font-size: clamp(0.1rem, 12vmin, 5rem);
+  opacity: 90%;
+  background: -webkit-linear-gradient(0deg, #ff6363 0%, #57c4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sign-up-fields {
@@ -111,6 +126,7 @@ ul, li {list-style-type: none;}
   font-family: 'Dejavu Sans', sans-serif;
   font-size: clamp(0.1rem, 4vmin, 1.6rem);
   margin-top: clamp(0.1rem, 30vh, 1rem);
+  margin-bottom: 2rem;
 }
 
 .sign-up-in-form button {
@@ -134,12 +150,16 @@ ul, li {list-style-type: none;}
 }
 
 .sign-up-fields a {
-  margin-left: 0.5rem;
+  margin-left: 0.7rem;
   color: #77c56d;
 }
 
 .sign-up-fields a:active {
   color: #e872b3;
+}
+
+#sparkles {
+  font-size: clamp(0.1rem, 4vmin, 2rem);
 }
 
 @media (max-width:600px) {
