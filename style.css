@@ -51,7 +51,7 @@ ul, li {list-style-type: none;}
 
 .sign-up-in-text {
   font-family: 'Dejavu Sans', sans-serif;
-  background: -webkit-linear-gradient(0deg, #f75f5f 0%, #48abe0 100%);
+  background: -webkit-linear-gradient(0deg, #ff6363 0%, #57c4ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,9 +90,20 @@ ul, li {list-style-type: none;}
 .input-label input {
   width: clamp(0.1rem, 45vmin, 16rem);
   height: clamp(0.1rem, 6vmin, 2.3rem);
+  font-family: 'Dejavu Sans', sans-serif;
+  font-size: clamp(0.1rem, 3.5vmin, 1.6rem);
+  color: #1a1c20;
+  font-weight:500;
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-radius: 2rem;
   border: none;
-  background: #535962;
+  outline:none;
+  background-color: #535962;
+}
+
+.input-label input:invalid {
+  background-color: #ff6363;
 }
 
 .sign-up-fields p {
@@ -113,12 +124,18 @@ ul, li {list-style-type: none;}
   margin-bottom: clamp(0.1rem, 15vmin, 1rem);
   border-radius: 2rem;
   border: none;
-  background: -webkit-linear-gradient(0deg, #f75f5f 0%, #48abe0 100%);;
+  background: -webkit-linear-gradient(0deg, #ff6363 0%, #57c4ff 100%);
+  cursor: pointer;
+}
+
+.sign-up-in-form button:hover {
+  border: solid;
+  border-color: #77c56d;
 }
 
 .sign-up-fields a {
   margin-left: 0.5rem;
-  color: #72cc66;
+  color: #77c56d;
 }
 
 .sign-up-fields a:active {

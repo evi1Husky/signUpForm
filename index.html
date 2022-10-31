@@ -17,15 +17,19 @@
       <form class="sign-up-in-form" action="/" method="post">
         <div class="input-label">
           <label for="userName">username</label>
-          <input type="text" id="userName" name="user_name" />
+          <input class="input" type="text" id="userName" 
+          name="user_name"
+          pattern="^(?!\s*$).+"/>
         </div>
         <div class="input-label">
           <label for="eMail">email</label>
-          <input type="email" id="eMail" name="user_email" />
+          <input class="input" type="email" id="eMail" name="user_email"/>
         </div>
         <div class="input-label">
           <label for="password">password</label>
-          <input type="password" id="password" name="password" />
+          <input class="input" type="password" id="password" name="password" 
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+          title="Password should contain at least 8 characters, 1 letter and 1 number"/>
         </div>
         <button type="submit">Sign up</button>
       </form>
